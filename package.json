@@ -1,0 +1,12 @@
+{
+  "name": "kdpc",
+  "version": "1.0.0",
+  "description": "a simple electron app",
+  "main": "app/main/index.js",
+  "repository": {
+    "url": "git@github.com:zybbyzaa/kd-pc.git",
+    "type": "git"
+  },
+  "author": "zyb <zybbyzaa@163.com>",
+  "license": "MIT"
+}

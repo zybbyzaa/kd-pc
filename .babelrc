@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "electron": "last 2",
+          "node": "current"
+        },
+        "debug": true,
+        "useBuiltIns": "entry"
+      }
+    ],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-export-extensions",
+    "transform-decorators-legacy",
+    "mobx-deep-action"
+  ]
+}
