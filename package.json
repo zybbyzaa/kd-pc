@@ -1,5 +1,6 @@
 {
   "name": "kdpc",
+  "cnname": "口袋48forPC",
   "version": "1.0.0",
   "description": "a simple electron app",
   "main": "app/main/index.js",
@@ -8,5 +9,15 @@
     "type": "git"
   },
   "author": "zyb <zybbyzaa@163.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-mobx-deep-action": "^1.6.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
