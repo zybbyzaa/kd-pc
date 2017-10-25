@@ -5,7 +5,7 @@
       {
         "modules": false,
         "targets": {
-          "electron": "last 2",
+          "browsers": ["last 2 versions"],
           "node": "current"
         },
         "debug": true,

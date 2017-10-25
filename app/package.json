@@ -11,12 +11,11 @@
   "author": "zyb <zybbyzaa@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development electron app/dist/main.js",
-    "watch:main": "cross-env NODE_ENV=development webpack --watch --config webpack.main.config.js",
-    "watch:renderer": "cross-env NODE_ENV=development webpack --watch --config webpack.renderer.config.js",
     "pack": "npm run pack:main && npm run pack:renderer",
-    "pack:main": "cross-env NODE_ENV=production webpack -p --progress --colors --config webpack.main.config.js",
-    "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config webpack.renderer.config.js"
+    "pack:main":
+      "cross-env NODE_ENV=production webpack -p --progress --colors --config webpack.main.config.js",
+    "pack:renderer":
+      "cross-env NODE_ENV=production webpack --progress --colors --config webpack.renderer.config.js"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -53,9 +52,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.6",
-    "socket.io-client": "^2.0.4",
     "style-loader": "^0.19.0",
     "svg-inline-loader": "^0.8.0",
     "url-loader": "^0.6.2",

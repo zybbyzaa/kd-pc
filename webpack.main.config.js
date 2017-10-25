@@ -13,9 +13,9 @@ let mainConfig = {
     main: path.join(__dirname, 'app/main/index.js')
   },
   output: {
-    filename: 'js/[name].js',
+    filename: '[name].js',
     libraryTarget: 'commonjs2',
-    path: path.join(__dirname, 'dist')
+    path: path.join(__dirname, 'app/dist')
   },
   resolve: {
     extensions: ['.js', '.json', '.node'],

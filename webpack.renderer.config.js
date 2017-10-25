@@ -10,7 +10,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
-const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 
 let rendererConfig = {
   entry: {
@@ -120,18 +119,13 @@ let rendererConfig = {
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['vendor', 'manifest'],
+      name: 'vendor',
       minChunks: Infinity
     }),
     new ExtractTextPlugin('css/styles.css'),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './app/index.html'
-    }),
-    new ChunkManifestPlugin({
-      filename: 'chunk-manifest.json',
-      manifestVariable: 'webpackManifest',
-      inlineManifest: true
     }),
     new FriendlyErrorsPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
